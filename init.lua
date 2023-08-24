@@ -537,3 +537,6 @@ cmp.setup {
 -- This is a space for my (Robinson's) custom config: mappings, plugin setups, etc
 vim.keymap.set({ 'n', 'v' }, '<C-p>', require('nvim-tree.api').tree.toggle, { desc = 'Toggle File Explorer' })
 vim.keymap.set({ 'n', 'v' }, '<leader>f', vim.lsp.buf.format, { desc = 'Format current buffer with LSP' })
+vim.keymap.set({ 'n', 'v' }, '<Tab>', ':bnext<CR>', { desc = 'Moves to next buffer' })
+vim.keymap.set({ 'n', 'v' }, '<S-Tab>', ':bprev<CR>', { desc = 'Moves to previous buffer' })
+vim.keymap.set({ 'n', 'v' }, '<C-a>', 'ggvGY', { desc = 'Copy entires buffer' })
