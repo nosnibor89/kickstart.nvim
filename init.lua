@@ -535,5 +535,5 @@ cmp.setup {
 
 --------------- Custom Config ----------------------
 -- This is a space for my (Robinson's) custom config: mappings, plugin setups, etc
-vim.keymap.set({ 'n', 'v' }, '<C-p>', require('nvim-tree.api').tree.open, { desc = 'Open File Explorer' })
+vim.keymap.set({ 'n', 'v' }, '<C-p>', require('nvim-tree.api').tree.toggle, { desc = 'Toggle File Explorer' })
 vim.keymap.set({ 'n', 'v' }, '<leader>f', vim.lsp.buf.format, { desc = 'Format current buffer with LSP' })
