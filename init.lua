@@ -557,4 +557,6 @@ vim.keymap.set({ 'n', 'v' }, '<leader>f', vim.lsp.buf.format, { desc = 'Format c
 vim.keymap.set({ 'n', 'v' }, '<Tab>', ':bnext<CR>', { desc = 'Moves to next buffer' })
 vim.keymap.set({ 'n', 'v' }, '<S-Tab>', ':bprev<CR>', { desc = 'Moves to previous buffer' })
 vim.keymap.set({ 'n', 'v' }, '<C-a>', 'ggvGY', { desc = 'Copy entires buffer' })
-vim.keymap.set({ 'n', 'v', 't' }, '<C-t>', ':ToggleTerm<CR>', { desc = 'Toggles terminal window' })
+vim.keymap.set({ 'n', 'v' }, '<C-t>', ':ToggleTerm<CR>', { desc = 'Toggles terminal window' })
+vim.keymap.set({ 't' }, '<Esc>', '<C-\\><C-n>', { desc = 'Toggles terminal window' })
+vim.keymap.set({ 'n' }, '<leader>x', ':bd<CR>', { desc = 'Closes current buffer' })
